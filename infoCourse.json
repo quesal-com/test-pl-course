@@ -1,0 +1,24 @@
+{
+	"uuid": "52e922df-a029-448e-9aca-898c33a5ecc6",
+	"name": "Quesal Test PrairieLearn Course",
+	"title": "Test PrairieLearn Course",
+	"assessmentSets": [
+		{
+			"abbreviation": "MAIN",
+			"name": "Main",
+			"heading": "Main",
+			"color": "turquoise2"
+		}
+	],
+	"topics": [
+		{
+			"name": "Default",
+			"color": "gray1",
+			"description": "Topic"
+		}
+	],
+	"tags": [],
+	"options": {
+		"useNewQuestionRenderer": true
+	}
+}
