@@ -1,0 +1,173 @@
+<style>
+  .pl-code pre { /* Add border around code blocks */
+    border: 1px solid #ccc;
+  }
+  .card ul { /* Reduce padding of unordered lists in cards */
+    padding-left: 20px;
+  }
+  .card p { /* Reduce bottom margin for paragraphs above unordered lists in cards */
+    margin-bottom: 10px;
+  }
+  .task .card-header { /* Make task card headings stronger */
+    font-weight: bold;
+  }
+  div details.pl-hidden-hint { /* Make hints on bug detection stand out more - need strong CSS selector */
+    margin-bottom: 25px;
+    font-size: 1.3rem;
+    background: #f2f2bb;
+    border: 5px solid #ebd86b;
+    display: none; /* Only show hint box when there are test results */
+  }
+
+  /* Only show hint box when there are test results */
+  .pl-external-grader-results + div .pl-hidden-hint {
+    display: block;
+  }
+  .question-body {
+    border: 10px solid #b91fc9;
+  }
+</style>
+
+<pl-question-panel>
+
+<markdown>
+We recommend you boot up the workspace by clicking the button below and then come back to this tab to read the instructions.
+
+<pl-workspace></pl-workspace>
+
+---
+
+In this question you will test and complete the implementation and associated tests of an **exceptional coin collection application** where coins from
+Canada and USA are registered and displayed.
+
+<pl-figure inline="true" alt="CoinCollection Illustration" width="300px" file-name="coins.png" directory="clientFilesQuestion"></pl-figure>
+
+---
+
+Start by investigating the partial implementation of the `CoinCollection` class below. You will find this class, along with classes
+`Coin` and `CoinCollectionTest` in the workspace. For reading the code below, assume that the `Coin`
+class is a simple class with fields `id`, `title`, `year` and an implementation of `equals` that returns true _if the IDs of
+two coins match_. Also assume that the `DuplicateCoinException` class has a constructor with one string parameter that
+calls `super("Duplicate: " + string)` where `string` is the parameter value.
+</markdown>
+
+<pl-code language="java">{{params.src_CoinCollection}}</pl-code>
+
+
+  <div class="card my-3">
+    <div class="card-header">Guidance to do well in this question</div>
+    <div class="card-body">
+<markdown>
+Continuously run your tests:
+- You have unlimited attempts to click _Save & Grade_, but do _not_ only rely on the grader.
+- Instead, continuously running your tests ensures that your code keeps compiling and running.
+- Your code will _not_ be manually graded; it is essential that your code compiles and runs.
+- The first time you run tests, there will be an error that will disappear when running the tests again.
+
+Workspace notes:
+- You must _not_ change any workspace settings or install extensions.
+- Changing keyboard shortcuts (if you already know how), is OK but do so at your own risk!
+- Check the _Reference Material_ box at the bottom for more guidance on the coding tasks.
+
+Question-specific hints:
+- You may notice that the `Coin` class does not have a getter for the `id` field. This is intended.
+  There is a better method to compare coins and you may _not_ change the `Coin` class in any way.
+  If you absolutely can't find a way to make this work, we recommend comparing the coins' titles instead.
+
+Save & Grade:
+- When you are ready to receive grader feedback, come back to this page and click _Save & Grade_.
+- Below the feedback from the grader, we will provide hints to help you with bug detection.
+- The _Save_ button will only save a copy of your work; it will not submit it for grading.
+- You _must_ click the _Save & Grade_ button before the exam ends.
+</markdown>
+    </div>
+  </div>
+
+  <div class="card task my-3">
+    <div class="card-header">Task 1: Finish implementing tests</div>
+    <div class="card-body">
+<markdown>
+Use the workspace to complete the implementation of the unit tests with a `// TODO` comment described in the
+`CoinCollectionTest` class. It is recommended that you attempt the test cases in the order given in the test class.
+
+Requirements:
+- your tests must make use of the fields in the test class
+- you may _not_ make changes to the fields in the test class or the method annotated with `@BeforeEach`
+
+Remember to continuously run your tests to make sure your code compiles and runs.
+</markdown>
+    </div>
+  </div>
+
+  <div class="card task my-3">
+    <div class="card-header">Task 2: Implement new methods</div>
+    <div class="card-body">
+<markdown>
+Use the workspace to complete the implementation of the following methods in the `CoinCollection` class (we recommend
+doing so in the order listed):
+- `CoinCollection()` (the constructor)
+- `addCoin(Coin coin)`
+- `getCoins(int year)`
+
+You must _not_ make any changes to:
+- the `Coin` class that has been provided to you
+- the fields of the `CoinCollection` class (you must implement the class with a `List` data structure, even though
+  the CoinCollection does not allow duplicate coins)
+- the methods provided to you in the `CoinCollection` class (this includes adding or removing methods),
+  other than to complete the implementation of the methods specified above.
+
+Remember to continuously run your tests to make sure your code compiles and runs.
+</markdown>
+    </div>
+  </div>
+
+  <div class="card my-3">
+    <div class="card-header">Reference Material</div>
+    <div class="card-body">
+<markdown>
+The `reference` folder in the workspace contains classes and interfaces that are intended to remind you of basic Java syntax
+and commonly used Java control structures. Please also read the additional information below.
+
+The `java.lang.Exception` class provides the following:
+- `Exception(String message)`: Constructs a new Exception with the specified detail message.
+- `String getMessage()`: Returns the detail message passed in the constructor.
+
+The `java.lang.IllegalArgumentException` class extends `java.lang.RuntimeException` (which extends `java.lang.Exception`)
+and is thrown to indicate that a method has been passed an illegal or inappropriate argument.
+
+The `java.util.List` interface (`java.util.ArrayList` implements this interface) provides the following methods:
+- `boolean add(E item)`: adds item to end of list and returns true
+- `int size()`: returns number of items added to list
+- `E get(int index)`: returns item at given index
+
+The `org.junit.jupiter.api.Assertions` type provides the following (static) methods:
+- `static void assertEquals(Object expected, Object actual)`: asserts that two objects are equal
+- `static void fail(String message)`: automatically fails an assertion with the given message
+</markdown>
+    </div>
+  </div>
+
+</pl-question-panel>
+
+<pl-submission-panel>
+  <pl-external-grader-results></pl-external-grader-results>
+  <pl-hidden-hints>
+    <pl-hint hint-name="Show hints on the bugs in our buggy versions">
+{{! See CoinCollectionBuggy*/CoinCollection.java for actual bugs }}
+<markdown>
+Here are some hints to help you with bug detection:
+- **Bug #1:** think about whether an exception is thrown in `getCoins`
+- **Bug #2:** think about whether a condition is checked in `getCoins`
+- **Bug #3:** think about what characteristics of coins being compared in `addCoin`
+- **Bug #4:** think about the order of coins
+- **Bug #5:** think about the state of the collection when `addCoins` throws an exception
+- **Bug #6:** think about the type of exception thrown in `getCoins`
+- **Bug #7:** think about what characteristics of coins being compared in `addCoin`
+- **Bug #8:** think about the exception message in `addCoin`
+- **Bug #9:** think about the exception message in `addCoin` (again)
+- **Bug #10:** think about coins actually never being added
+</markdown>
+    </pl-hint>
+  </pl-hidden-hints>
+  <pl-file-preview></pl-file-preview>
+</pl-submission-panel>

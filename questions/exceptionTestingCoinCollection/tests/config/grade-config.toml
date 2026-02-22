@@ -1,0 +1,67 @@
+# Grader Configuration File
+
+debug = true
+
+[checkstyle]
+active = false
+must-pass = false
+
+[student-code]
+application-code-required = true
+tests-required = true
+
+[student-code.code-coverage]
+active = true
+weight = 0.1
+branch-sub-weight = 0.3
+
+[reference-tests]
+available = true
+max-hints = 10
+weight = 0.5
+
+[bug-detection]
+active = true
+weight = 0.4
+hints = true
+jar-prefix = "CoinCollectionBuggy"
+
+	[[bug-detection.sub-weights]]
+	jar = "CoinCollectionBuggy1"
+	weight = 0.1
+
+	[[bug-detection.sub-weights]]
+	jar = "CoinCollectionBuggy2"
+	weight = 0.1
+
+	[[bug-detection.sub-weights]]
+	jar = "CoinCollectionBuggy3"
+	weight = 0.1
+
+	[[bug-detection.sub-weights]]
+	jar = "CoinCollectionBuggy4"
+	weight = 0.1
+
+	[[bug-detection.sub-weights]]
+	jar = "CoinCollectionBuggy5"
+	weight = 0.1
+
+	[[bug-detection.sub-weights]]
+	jar = "CoinCollectionBuggy6"
+	weight = 0.1
+
+	[[bug-detection.sub-weights]]
+	jar = "CoinCollectionBuggy7"
+	weight = 0.1
+
+	[[bug-detection.sub-weights]]
+	jar = "CoinCollectionBuggy8"
+	weight = 0.1
+
+  [[bug-detection.sub-weights]]
+  jar = "CoinCollectionBuggy9"
+  weight = 0.1
+
+  [[bug-detection.sub-weights]]
+  jar = "CoinCollectionBuggy10"
+  weight = 0.1

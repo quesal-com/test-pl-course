@@ -1,0 +1,14 @@
+@startuml
+class ConnectionFailedException extends DatabaseException {
+}
+class QueryFailedException extends DatabaseException {
+}
+class AuthenticationFailedException extends DatabaseException {
+}
+class DatabaseNotFoundException extends ConnectionFailedException {
+}
+class ConnectionTimeoutException extends ConnectionFailedException {
+}
+class ConnectionRefusedException extends ConnectionFailedException {
+}
+@enduml

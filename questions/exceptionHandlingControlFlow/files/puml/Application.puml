@@ -1,0 +1,14 @@
+@startuml
+class InitializationException extends ApplicationException {
+}
+class ConfigurationException extends ApplicationException {
+}
+class OperationFailedException extends ApplicationException {
+}
+class MissingResourceException extends InitializationException {
+}
+class InvalidConfigurationException extends InitializationException {
+}
+class UnsupportedFeatureException extends InitializationException {
+}
+@enduml

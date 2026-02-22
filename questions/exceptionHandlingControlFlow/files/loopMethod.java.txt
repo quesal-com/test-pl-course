@@ -1,0 +1,15 @@
+public void execute(int times) {{
+  for (int i = 0; i < times; i++) {{
+    try {{
+      // {A}
+    }} catch (------------) {{ // {B}
+      // {C}
+    }} catch (------------) {{ // {D}
+      // {E}
+    }} catch (------------) {{ // {F}
+      // {G}
+    }} catch (------------) {{ // {H}
+      // {J}
+    }}
+  }}
+}}

@@ -1,0 +1,14 @@
+@startuml
+class VisaIssuesException extends CannotTravelException {
+}
+class FlightCancellationException extends CannotTravelException {
+}
+class PassportExpiredException extends CannotTravelException {
+}
+class NoVisaAppointmentException extends VisaIssuesException {
+}
+class VisaRejectedException extends VisaIssuesException {
+}
+class VisaExpiredException extends VisaIssuesException {
+}
+@enduml

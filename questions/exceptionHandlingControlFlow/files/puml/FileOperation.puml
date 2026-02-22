@@ -1,0 +1,14 @@
+@startuml
+class FileNotFoundException extends FileOperationException {
+}
+class FileAccessException extends FileOperationException {
+}
+class FileReadException extends FileOperationException {
+}
+class FileCorruptedException extends FileNotFoundException {
+}
+class FileNotReadableException extends FileNotFoundException {
+}
+class FileLockedException extends FileNotFoundException {
+}
+@enduml

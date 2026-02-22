@@ -1,0 +1,14 @@
+@startuml
+class CardDeclinedException extends PaymentFailedException {
+}
+class InsufficientFundsException extends PaymentFailedException {
+}
+class TransactionErrorException extends PaymentFailedException {
+}
+class CardExpiredException extends CardDeclinedException {
+}
+class CardBlockedException extends CardDeclinedException {
+}
+class CardLimitExceededException extends CardDeclinedException {
+}
+@enduml

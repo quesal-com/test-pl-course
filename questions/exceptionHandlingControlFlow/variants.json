@@ -1,0 +1,102 @@
+{
+  "API": {
+    "exTopLevel": "APIException",
+    "exMiddleCenter": "UnauthorizedException",
+    "exMiddleLeft": "BadRequestException",
+    "exBottomLeft": "InvalidParameterException",
+    "exMiddleRight": "NotFoundException",
+    "exBottomCenter": "MissingParameterException",
+    "exBottomRight": "UnsupportedMethodException",
+    "method": "sendRequest"
+  },
+  "Application": {
+    "exTopLevel": "ApplicationException",
+    "exMiddleCenter": "ConfigurationException",
+    "exMiddleLeft": "InitializationException",
+    "exBottomLeft": "MissingResourceException",
+    "exMiddleRight": "OperationFailedException",
+    "exBottomCenter": "InvalidConfigurationException",
+    "exBottomRight": "UnsupportedFeatureException",
+    "method": "launchApplication"
+  },
+  "Authentication": {
+    "exTopLevel": "AuthenticationException",
+    "exMiddleCenter": "PasswordIncorrectException",
+    "exMiddleLeft": "UserNotFoundException",
+    "exBottomLeft": "UserDisabledException",
+    "exMiddleRight": "AccountLockedException",
+    "exBottomCenter": "UserExpiredException",
+    "exBottomRight": "UserNotVerifiedException",
+    "method": "authenticate"
+  },
+  "CannotStudy": {
+    "exTopLevel": "CannotStudyException",
+    "exMiddleCenter": "UnfocusedException",
+    "exMiddleLeft": "FeelingSickException",
+    "exBottomLeft": "RunnyNoseException",
+    "exMiddleRight": "BetterThingsToDoException",
+    "exBottomCenter": "HeadacheException",
+    "exBottomRight": "FeverException",
+    "method": "study"
+  },
+  "CannotTravel": {
+    "exTopLevel": "CannotTravelException",
+    "exMiddleCenter": "FlightCancellationException",
+    "exMiddleLeft": "VisaIssuesException",
+    "exBottomLeft": "NoVisaAppointmentException",
+    "exMiddleRight": "PassportExpiredException",
+    "exBottomCenter": "VisaRejectedException",
+    "exBottomRight": "VisaExpiredException",
+    "method": "travel"
+  },
+  "Database": {
+    "exTopLevel": "DatabaseException",
+    "exMiddleCenter": "QueryFailedException",
+    "exMiddleLeft": "ConnectionFailedException",
+    "exBottomLeft": "DatabaseNotFoundException",
+    "exMiddleRight": "AuthenticationFailedException",
+    "exBottomCenter": "ConnectionTimeoutException",
+    "exBottomRight": "ConnectionRefusedException",
+    "method": "runQuery"
+  },
+  "FileOperation": {
+    "exTopLevel": "FileOperationException",
+    "exMiddleCenter": "FileAccessException",
+    "exMiddleLeft": "FileNotFoundException",
+    "exBottomLeft": "FileCorruptedException",
+    "exMiddleRight": "FileReadException",
+    "exBottomCenter": "FileNotReadableException",
+    "exBottomRight": "FileLockedException",
+    "method": "openFile"
+  },
+  "Hardware": {
+    "exTopLevel": "HardwareException",
+    "exMiddleCenter": "DeviceFailureException",
+    "exMiddleLeft": "DeviceNotFoundException",
+    "exBottomLeft": "BatteryLowException",
+    "exMiddleRight": "SensorMalfunctionException",
+    "exBottomCenter": "DeviceDisconnectedException",
+    "exBottomRight": "DeviceIncompatibleException",
+    "method": "diagnose"
+  },
+  "Network": {
+    "exTopLevel": "NetworkException",
+    "exMiddleCenter": "NoInternetException",
+    "exMiddleLeft": "ConnectionTimeoutException",
+    "exBottomLeft": "ProxyErrorException",
+    "exMiddleRight": "ServerDownException",
+    "exBottomCenter": "DNSLookupFailedException",
+    "exBottomRight": "ConnectionRefusedException",
+    "method": "testNetwork"
+  },
+  "PaymentFailed": {
+    "exTopLevel": "PaymentFailedException",
+    "exMiddleCenter": "InsufficientFundsException",
+    "exMiddleLeft": "CardDeclinedException",
+    "exBottomLeft": "CardExpiredException",
+    "exMiddleRight": "TransactionErrorException",
+    "exBottomCenter": "CardBlockedException",
+    "exBottomRight": "CardLimitExceededException",
+    "method": "makePayment"
+  }
+}

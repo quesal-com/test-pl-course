@@ -1,0 +1,14 @@
+@startuml
+class DeviceNotFoundException extends HardwareException {
+}
+class DeviceFailureException extends HardwareException {
+}
+class SensorMalfunctionException extends HardwareException {
+}
+class BatteryLowException extends DeviceNotFoundException {
+}
+class DeviceDisconnectedException extends DeviceNotFoundException {
+}
+class DeviceIncompatibleException extends DeviceNotFoundException {
+}
+@enduml

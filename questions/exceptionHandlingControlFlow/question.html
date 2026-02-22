@@ -1,0 +1,103 @@
+<style>
+  .card td:first-child {
+    border-top: 1px solid #ccc;
+    vertical-align: top;
+    padding: 5px 10px;
+  }
+  .question-body {
+    border: 10px solid #b91fc9;
+  }
+</style>
+
+<pl-question-panel>
+  <p>
+    <b>Note: For multiple-choice question parts, make sure to <i>always select at least one option.</i> There is always
+      at least one correct option. If you do not select at least one option for each part, it will result in a score of 0 on
+      this question!</b>
+  </p>
+  Imagine we have the following exception hierarchy:
+  <pl-figure file-name="{{params.variantKey}}.svg" directory="clientFilesQuestion"></pl-figure>
+  <hr/>
+  Now imagine we have this method:
+  <pl-code language="java" prevent-select="true">{{params.throwingMethodCode}}</pl-code>
+  <hr/>
+  Plus, we have the following method which wants to call the method above:
+  <pl-code language="java" prevent-select="true">{{params.loopMethodCode}}</pl-code>
+  <hr/>
+
+  <markdown>
+Have a look at the following specification:
+- For any `{{params.variant.exMiddleLeft}}` except `{{params.variant.exBottomRight}}`, we print a message but keep running the loop.
+- For a `{{params.variant.exBottomRight}}`, we print a message and exit the loop.
+- For any `{{params.variant.exMiddleCenter}}`, we print a message but keep running the loop.
+- For any other `{{params.variant.exTopLevel}}`, we print a message and exit the loop.
+
+**How would we code this assuming the following requirements?**
+
+- If we want to include catch blocks for two or more exceptions that do not have a supertype/subtype relationship,
+  we work left-to-right through the diagram. Plus, we want to catch `{{params.variant.exMiddleCenter}}` as late as possible.
+- By _Where would we catch...?_, we refer to the point where we insert the exception type
+  in the code above. For example, when we ask  _Where would we catch `{{params.variant.exTopLevel}}`?_, we are asking
+  at what point we would insert the code `{{params.variant.exTopLevel}} e`.
+  </markdown>
+
+</pl-question-panel>
+
+<div class="card my-2">
+  <div class="card-header">Part 1</div>
+  <div class="card-body">
+    <pl-question-panel>
+      <p><b>Where would we catch...</b></p>
+    </pl-question-panel>
+    <table>
+      {{#params.answersPart1}}
+      <tr>
+        <td>...<code>{{exceptionName}}</code>?</td>
+        <td>
+          <pl-dropdown answers-name="{{exceptionName}}" sort=true>
+            {{#answers}}
+            <pl-answer correct="{{tag}}">{{{ans}}}</pl-answer>
+            {{/answers}}
+          </pl-dropdown>
+        </td>
+      </tr>
+      {{/params.answersPart1}}
+    </table>
+  </div>
+</div>
+
+<div class="card my-2">
+  <div class="card-header">Part 2</div>
+  <div class="card-body">
+    <pl-question-panel>
+      <b>Where would we call <code>{{params.methodName}}()</code>?</b>
+    </pl-question-panel>
+    <pl-checkbox answers-name="part2" fixed-order="true" weight="2" partial-credit=true partial-credit-method="PC">
+      <pl-answer correct="true">{{params.variantLetters.A}}</pl-answer>
+      <pl-answer>{{params.variantLetters.C}}</pl-answer>
+      <pl-answer>{{params.variantLetters.E}}</pl-answer>
+      <pl-answer>{{params.variantLetters.G}}</pl-answer>
+      <pl-answer>{{params.variantLetters.J}}</pl-answer>
+      <pl-answer>Nowhere</pl-answer>
+    </pl-checkbox>
+  </div>
+</div>
+
+<div class="card my-2">
+  <div class="card-header">Part 3</div>
+  <div class="card-body">
+    <pl-question-panel>
+      <b>At what point(s) would we insert a <code>break</code> statement to break out of the loop?</b>
+      (Note: a <code>break</code> statement in Java can be used to exit, i.e. "break out", of a loop. Whenever a break
+      statement is evaluated, there will be no further iterations to the loop.)
+    </pl-question-panel>
+    <pl-checkbox answers-name="part3" fixed-order="true" weight="3" partial-credit=true partial-credit-method="PC">
+      <pl-answer>{{params.variantLetters.A}}</pl-answer>
+      <pl-answer correct="true">{{params.variantLetters.C}}</pl-answer>
+      <pl-answer>{{params.variantLetters.E}}</pl-answer>
+      <pl-answer>{{params.variantLetters.G}}</pl-answer>
+      <pl-answer correct="true">{{params.variantLetters.J}}</pl-answer>
+      <pl-answer>Nowhere</pl-answer>
+    </pl-checkbox>
+  </div>
+</div>

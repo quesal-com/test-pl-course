@@ -1,0 +1,14 @@
+@startuml
+class BadRequestException extends APIException {
+}
+class UnauthorizedException extends APIException {
+}
+class NotFoundException extends APIException {
+}
+class InvalidParameterException extends BadRequestException {
+}
+class MissingParameterException extends BadRequestException {
+}
+class UnsupportedMethodException extends BadRequestException {
+}
+@enduml

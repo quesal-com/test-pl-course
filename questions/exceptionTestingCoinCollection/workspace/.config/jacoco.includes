@@ -1,0 +1,3 @@
+model/CoinCollection.class
+model/Coin.class
+model/DuplicateCoinException.class

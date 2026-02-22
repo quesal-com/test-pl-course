@@ -1,0 +1,14 @@
+@startuml
+class UserNotFoundException extends AuthenticationException {
+}
+class PasswordIncorrectException extends AuthenticationException {
+}
+class AccountLockedException extends AuthenticationException {
+}
+class UserDisabledException extends UserNotFoundException {
+}
+class UserExpiredException extends UserNotFoundException {
+}
+class UserNotVerifiedException extends UserNotFoundException {
+}
+@enduml

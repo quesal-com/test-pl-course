@@ -1,0 +1,14 @@
+@startuml
+class {exMiddleLeft} extends {exTopLevel} {{
+}}
+class {exMiddleCenter} extends {exTopLevel} {{
+}}
+class {exMiddleRight} extends {exTopLevel} {{
+}}
+class {exBottomLeft} extends {exMiddleLeft} {{
+}}
+class {exBottomCenter} extends {exMiddleLeft} {{
+}}
+class {exBottomRight} extends {exMiddleLeft} {{
+}}
+@enduml

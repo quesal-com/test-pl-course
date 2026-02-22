@@ -1,0 +1,14 @@
+@startuml
+class ConnectionTimeoutException extends NetworkException {
+}
+class NoInternetException extends NetworkException {
+}
+class ServerDownException extends NetworkException {
+}
+class ProxyErrorException extends ConnectionTimeoutException {
+}
+class DNSLookupFailedException extends ConnectionTimeoutException {
+}
+class ConnectionRefusedException extends ConnectionTimeoutException {
+}
+@enduml
