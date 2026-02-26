@@ -1,0 +1,23 @@
+{
+	"uuid": "44741efd-6417-4471-bc69-45ec37664603",
+	"type": "Homework",
+	"title": "A1 (Top level)",
+	"set": "Quiz",
+	"number": "A",
+	"allowAccess": [],
+	"zones": [
+		{
+			"title": "Question 1",
+			"questions": [
+				{
+					"id": "exceptionTestingCoinCollection",
+					"points": 1
+				},
+				{
+					"id": "exceptionHandlingControlFlow",
+					"points": 1
+				}
+			]
+		}
+	]
+}

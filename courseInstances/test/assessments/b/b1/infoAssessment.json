@@ -1,0 +1,19 @@
+{
+	"uuid": "51c3d8ce-349b-4546-b784-e428aa96a52f",
+	"type": "Homework",
+	"title": "A2 (Nested)",
+	"set": "Quiz",
+	"number": "A",
+	"allowAccess": [],
+	"zones": [
+		{
+			"title": "Question 1",
+			"questions": [
+				{
+					"id": "exceptionTestingCoinCollection",
+					"points": 1
+				}
+			]
+		}
+	]
+}
