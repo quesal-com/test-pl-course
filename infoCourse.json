@@ -8,6 +8,12 @@
 			"name": "Main",
 			"heading": "Main",
 			"color": "turquoise2"
+		},
+		{
+			"abbreviation": "Q",
+			"name": "Quiz",
+			"heading": "Quizzes",
+			"color": "green1"
 		}
 	],
 	"topics": [
