@@ -1,0 +1,23 @@
+{
+	"uuid": "44741efd-6417-4471-bc69-45ec37664603",
+	"type": "Homework",
+	"title": "New assessment",
+	"set": "Non-existent",
+	"number": "A1",
+	"allowAccess": [],
+	"zones": [
+		{
+			"title": "Question 1",
+			"questions": [
+				{
+					"id": "exceptionTestingCoinCollection",
+					"points": 1
+				},
+				{
+					"id": "exceptionHandlingControlFlow",
+					"points": 1
+				}
+			]
+		}
+	]
+}
