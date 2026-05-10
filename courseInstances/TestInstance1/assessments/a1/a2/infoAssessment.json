@@ -1,13 +1,13 @@
 {
-	"uuid": "44741efd-6417-4471-bc69-45ec37664603",
+	"uuid": "4742572a-bc9b-413a-826a-768e185e0eb8",
 	"type": "Homework",
-	"title": "New assessment",
-	"set": "Non-existent",
-	"number": "A1",
+	"title": "a1/a2 (Invalid)",
+	"set": "A",
+	"number": "2",
 	"allowAccess": [],
 	"zones": [
 		{
-			"title": "Question 1",
+			"title": "Zone 1",
 			"questions": [
 				{
 					"id": "exceptionTestingCoinCollection",
