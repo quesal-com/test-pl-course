@@ -1,23 +1,20 @@
 {
-	"uuid": "2580ba84-9fbb-404f-86a7-eb27037912be",
-	"type": "Homework",
-	"title": "c/c1",
-	"set": "C",
-	"number": "1",
-	"allowAccess": [],
-	"zones": [
-		{
-			"title": "Zone 1",
-			"questions": [
-				{
-					"id": "exceptionHandlingControlFlow",
-					"points": 1
-				},
-				{
-					"id": "exceptionTestingCoinCollection",
-					"points": 1
-				}
-			]
-		}
-	]
+  "uuid": "ab82242c-aff3-4415-b487-4f1460a8b4c1",
+  "type": "Homework",
+  "title": "c/c1",
+  "set": "Homework",
+  "number": "1",
+  "text": "Description",
+  "zones": [
+    {
+      "title": "Zone 1",
+      "comment": "This is a new zone",
+      "questions": [
+        {
+          "id": "exceptionTestingCoinCollection",
+          "autoPoints": 1
+        }
+      ]
+    }
+  ]
 }
