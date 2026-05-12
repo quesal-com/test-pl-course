@@ -4,17 +4,5 @@
   "title": "c/c1",
   "set": "Homework",
   "number": "1",
-  "text": "Description",
-  "zones": [
-    {
-      "title": "Zone 1",
-      "comment": "This is a new zone",
-      "questions": [
-        {
-          "id": "exceptionTestingCoinCollection",
-          "autoPoints": 1
-        }
-      ]
-    }
-  ]
+  "text": "Description"
 }
