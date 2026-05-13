@@ -1,19 +1,9 @@
 {
-	"uuid": "b6dc0845-b633-45a8-ad8c-07fa0a2b2a25",
-	"type": "Homework",
-	"title": "b/b1",
-	"set": "B",
-	"number": "1",
-	"allowAccess": [],
-	"zones": [
-		{
-			"title": "Zone 1",
-			"questions": [
-				{
-					"id": "exceptionTestingCoinCollection",
-					"points": 1
-				}
-			]
-		}
-	]
+  "uuid": "b6dc0845-b633-45a8-ad8c-07fa0a2b2a25",
+  "type": "Homework",
+  "title": "b/b1",
+  "set": "B",
+  "number": "1",
+  "allowAccess": [],
+  "text": "Test Instance 1 / b/b1"
 }

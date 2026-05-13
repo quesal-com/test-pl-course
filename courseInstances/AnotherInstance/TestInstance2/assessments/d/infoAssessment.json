@@ -1,23 +1,21 @@
 {
-	"uuid": "3ae7d423-e030-453c-a04e-69e16a284d65",
-	"type": "Homework",
-	"title": "d",
-	"set": "D",
-	"number": "1",
-	"allowAccess": [],
-	"zones": [
-		{
-			"title": "Zone 1",
-			"questions": [
-				{
-					"id": "exceptionHandlingControlFlow",
-					"points": 1
-				},
-				{
-					"id": "exceptionTestingCoinCollection",
-					"points": 1
-				}
-			]
-		}
-	]
+  "uuid": "3ae7d423-e030-453c-a04e-69e16a284d65",
+  "type": "Homework",
+  "title": "d",
+  "set": "D",
+  "number": "1",
+  "allowAccess": [],
+  "zones": [
+    {
+      "title": "Zone 1",
+      "comment": "",
+      "questions": [
+        {
+          "id": "exceptionHandlingControlFlow",
+          "autoPoints": 1
+        }
+      ]
+    }
+  ],
+  "text": "Test Instance 2 / d"
 }
