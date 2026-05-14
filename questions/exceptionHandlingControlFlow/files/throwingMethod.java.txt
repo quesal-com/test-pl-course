@@ -1,3 +1,0 @@
-private void {methodName}() throws {exceptionName} {{
-    // IMPLEMENTATION OMITTED
-}}

@@ -1,23 +1,21 @@
 {
-	"uuid": "44741efd-6417-4471-bc69-45ec37664603",
-	"type": "Homework",
-	"title": "a1/",
-	"set": "A",
-	"number": "1",
-	"allowAccess": [],
-	"zones": [
-		{
-			"title": "Zone 1",
-			"questions": [
-				{
-					"id": "exceptionTestingCoinCollection",
-					"points": 1
-				},
-				{
-					"id": "exceptionHandlingControlFlow",
-					"points": 1
-				}
-			]
-		}
-	]
+  "uuid": "44741efd-6417-4471-bc69-45ec37664603",
+  "type": "Homework",
+  "title": "a1/",
+  "set": "A",
+  "number": "1",
+  "allowAccess": [],
+  "zones": [
+    {
+      "title": "Zone 1",
+      "comment": "",
+      "questions": [
+        {
+          "id": "exceptionTestingCoinCollection",
+          "autoPoints": 1
+        }
+      ]
+    }
+  ],
+  "text": "Test Instance 1 / a1/"
 }
