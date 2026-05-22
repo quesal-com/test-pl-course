@@ -5,17 +5,5 @@
   "set": "D",
   "number": "1",
   "allowAccess": [],
-  "zones": [
-    {
-      "title": "Zone 1",
-      "comment": "",
-      "questions": [
-        {
-          "id": "exceptionTestingCoinCollection",
-          "autoPoints": 1
-        }
-      ]
-    }
-  ],
   "text": "Test Instance 2 / d"
 }
